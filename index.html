@@ -17,14 +17,14 @@
     <h1>Peliculas pa digalo con mimica!</h1>
 
 
-
-    <br> peliculas para digalo con mimica by dani </br>
-
-    <button type="button" onclick="mostrarPeli()" class="btn btn-primary">Obtener pelicula</button>
-
-    <p class="p-3 mb-2 bg-danger text-white" id="t_peli">
-    </p>
-
+    <div class="d-flex flex-row">
+      <div class="p-2">
+        <button type="button" onclick="mostrarPeli()" class="btn btn-primary">Obtener pelicula</button>
+      </div>
+      <div class="p-2">
+        <p class="p-3 mb-2 bg-danger text-white" style="visibility:hidden" id="t_peli"></p>
+      </div>
+  
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

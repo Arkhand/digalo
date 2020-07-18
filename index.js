@@ -426,4 +426,5 @@ function peliculas() {
 function mostrarPeli() {
     
     t_peli.innerHTML = peliculas();
+    t_peli.style.visibility = "visible";
 } 
