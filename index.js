@@ -420,6 +420,8 @@ function peliculas() {
     var cant = lista.length;
     var peli = Math.floor(Math.random() * cant);
     return lista[peli];
+
+
     
 }
     
@@ -427,4 +429,12 @@ function mostrarPeli() {
     
     t_peli.innerHTML = peliculas();
     t_peli.style.visibility = "visible";
+    document.getElementById("btnPeli").disabled = true;
+    btnPeliLoad.style.visibility = "visible";
+
+    setTimeout(() => {
+      document.getElementById("btnPeli").disabled = false;
+      btnPeliLoad.style.visibility = "hidden";
+    }, 15000);
+
 } 
